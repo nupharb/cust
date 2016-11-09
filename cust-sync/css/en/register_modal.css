@@ -3038,7 +3038,6 @@ i
     margin-top: 12px;
     padding-top: 7px;
     height: 26px;
-    background: transparent url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px 0px;
 }
 
 #secondOverlayDiv .pmDetails {
@@ -3661,18 +3660,6 @@ i
     font-weight: bold;
     overflow: hidden;
 }
-
-/*.conditionsTable_item, .conditionsTable_condition, .conditionsTable_status, .conditionsTable_resolution {*/
-    /*height: 31px;*/
-    /*background: transparent !important;*/
-    /*float: left;*/
-    /*line-height: 30px;*/
-    /*font-size: 12px;*/
-    /*color: #fff;*/
-    /*font-weight: bold;*/
-    /*text-shadow: -1px 1px 2px #000;*/
-    /*padding-left: 2px !important;*/
-/*}*/
 
 .conditionsTable_item, .conditionsTableRow_item {
     width: 196px;
@@ -5187,7 +5174,6 @@ input[readonly="readonly"] {
 #secondOverlayCtnt .formFooter {
     width: 528px;
     padding-top: 5px;
-    background: url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 transparent !important
 }
 
 #secondOverlayCtnt .leftClmn #overlay_span_issue_num {
@@ -6858,4 +6844,9 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 
 .rmMthdConditionssecondOverlayDiv {
     height: auto !important;
+}
+
+.rmMthdConditionssecondOverlayCtnt ul {
+    width: 736px;
+    border: 1px solid #bbb;
 }

@@ -475,7 +475,7 @@ header #account-items {
   position: absolute;
   background: #237fb2;
   margin-top: 4px;
-  padding: 8px;
+  padding: 0px 8px;
   border: none;
   display: none;
   width: 90%;
@@ -487,12 +487,11 @@ header #account-items {
 header #account-items > div {
   background-color: #237fb2;
   margin: 0px;
-  height: 34px;
-  padding-top: 12px;
+  height: 42px;
+  padding: 0px 15px;
   float: left;
   clear: both;
   width: 100%;
-  padding-top: 0px;
 }
 header #account-items a {
   color: #fff;
@@ -505,6 +504,12 @@ header #account-items a {
   padding-top: 12px;
   border-bottom: 1px solid #0f3353;
   border-radius: 0px;
+  line-height: 1.4;
+  padding-left: 40px;
+}
+header #account-items > div:nth-child(3) a
+{
+  border-bottom: 0px;
 }
 header #account-items a:hover {
   border-bottom: none;
@@ -8021,6 +8026,7 @@ div#mts_form_container
 .totalWd aside + div h5, .totalWd aside + div h6
 {
   font-size: 14px;
+  line-height: 1.4;
 }
 .totalWd aside
 {
