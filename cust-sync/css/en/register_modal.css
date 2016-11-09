@@ -44,7 +44,7 @@
 }
 
 .regOverlay #inputs {
-    min-height: 305px;
+    /*min-height: 305px;*/
 }
 
 .large_single.regOverlay #inputs {
@@ -91,7 +91,7 @@
 .regOverlay {
     padding: 0;
     z-index: 9999;
-    width: 996px;
+    width: 1016px;
     height: 655px;
     background-color: #e8ecef;
     font-family: Arial, Helvetica, sans-serif;
@@ -112,11 +112,7 @@
 
 .regOverlay .HdrTL,
 .regOverlay .HdrTR {
-    background-color: #00417d;
-    float: left;
-    overflow: hidden;
-    height: 45px;
-    width: 10px;
+    display: none;
 }
 
 .regOverlay #overlayHeader,
@@ -128,10 +124,10 @@
     line-height: 26px;
     margin: 0;
     overflow: hidden;
-    padding: 9px 0;
+    padding: 9px 10px;
     position: relative;
     vertical-align: middle;
-    width: 976px;
+    width: 100%;
     font-family: Arial, sans-serif;
     background-color: #00417d;
 }
@@ -165,7 +161,7 @@
     height: 27px;
     overflow: hidden;
     padding: 0 14px 0 9px;
-    width: 450px;
+    width: 466px;
     z-index: 100499;
 }
 
@@ -214,7 +210,7 @@
     margin: 0;
     padding: 6px 11px 0;
     position: relative;
-    width: 972px;
+    width: 992px;
     background-color: #e8ecef;
 }
 
@@ -226,7 +222,7 @@
     float: left;
     display: inline;
     position: relative;
-    width: 100%;
+    width: 777px;
     height: 28px;
     font-family: Arial, sans-serif;
 }
@@ -284,7 +280,7 @@
 .regOverlay #overlayContainer .formContainer form {
     display: inline;
     float: left;
-    width: 768px;
+    /*width: 768px;*/
 }
 
 .regOverlay #overlayContainer .formContainer .leftClmn, .regOverlay #overlayContainer .formContainer .rightClmn {
@@ -338,6 +334,7 @@
     float: left;
     color: #222;
     margin-top: 5px;
+    margin-bottom: 4px;
     text-align: left;
     font-size: 14px;
     line-height: 17px;
@@ -627,6 +624,7 @@ div.tooltipGroup {
 
 .regOverlay div.tooltipGroup {
     height: 38px;
+    margin-bottom: 8px;
 }
 
 div.tooltipGroup select {
@@ -897,7 +895,7 @@ div.tooltipGroup .hint.error {
     position: static;
     width: 185px;
     height: 473px;
-    padding: 3px;
+    padding-top: 3px;
 }
 
 .regOverlay #overlayContainer .rightNav .rightNavContent {
@@ -1112,7 +1110,7 @@ span.importo-prelevare-text {
 }
 
 .regOverlay.deposit #overlayContainer #paymentMethodsContainer {
-    width: 777px;
+    width: 795px;
 }
 
 .regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsMenu {
@@ -2050,9 +2048,10 @@ span.importo-prelevare-text {
     display: none;
     float: left;
     background-color: #fff;
-    padding: 8px;
+    padding: 16px;
     width: 520px;
     margin-left: 5px;
+    height: 519px;
 }
 
 .regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsContent #content_group_OTHER .moreText {
@@ -2079,6 +2078,7 @@ span.importo-prelevare-text {
     font-size: 13px;
     background-repeat: no-repeat;
     padding-left: 17px;
+    margin-right: 4px;
 }
 
 #paymentMethodsContent .paymentMethodRedirect {
@@ -2122,9 +2122,9 @@ p.pymnt_iconWithText.visibleText span {
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .rightClmn {
-    width: auto;
-    float: right;
-    margin-top: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .formFooter a {
@@ -2157,13 +2157,15 @@ p.pymnt_iconWithText.visibleText span {
 
 .regOverlay.deposit #inputs {
     /*height: 435px;*/
-    height: 395px;
+    /*height: 395px;*/
     /*overflow: hidden;*/
 }
 
 .regOverlay.deposit .pmDetails {
-    /*height: 44px;*/
+    margin-top: 8px;
 }
+
+
 
 .regOverlay.deposit .pmLogo {
     width: 189px;
@@ -3525,6 +3527,7 @@ i
 
 #secondOverlayCtnt.rmMthdConditionssecondOverlayCtnt .formContainer {
     width: 789px !important;
+    padding-left: 18px;
 }
 
 #secondOverlayTop.rmMthdConditionssecondOverlayTop {
@@ -5964,7 +5967,8 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 #secondOverlayDiv.editMthdsecondOverlayDiv {
-    height: 353px !important;
+    /*height: 390px !important;*/
+    height: auto !important;
 }
 
 #secondOverlayDiv.warnMsgsecondOverlayDiv {
@@ -6763,10 +6767,9 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayCtnt.editMthdsecondOverlayCtnt .formContainer {
     width: auto !important;
-    padding: 0 5px;
+    padding: 0 9px;
     margin: 7px;
     background: #fff;
-    /*height: 378px;*/
 }
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtmLeft,
@@ -6780,7 +6783,7 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     background: none !important;
     border-top: 1px solid #7d7d7d;
     height: auto;
-    padding-top: 5px;
+    padding-top: 9px;
 }
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen,
@@ -6812,7 +6815,7 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     background-image: url(../../images/en/remove-card.png?ver=10302352b9cca8d374b2c95e0ccf157d);
     background-color: #fff;
     border-radius: 5px;
-    padding: 8px 8px 6px 23px;
+    padding: 8px 8px 6px 11px;
     color: #fff !important;
     background-position: 7px 8px;
     font-size: 12px;
@@ -6849,4 +6852,24 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 .rmMthdConditionssecondOverlayCtnt ul {
     width: 736px;
     border: 1px solid #bbb;
+}
+
+#formFooter_edit .rightClmn {
+    bottom: 18px !important;
+}
+
+.editMthdsecondOverlayCtnt .pmDetails {
+    margin: 0 !important;
+}
+
+.editMthdsecondOverlayCtnt .pmDetails .pmLogo {
+    margin-top: 8px;
+}
+
+.editMthdsecondOverlayCtnt .formContainer .rightClmn {
+    width: auto !important;
+}
+
+.rmMthdConditionssecondOverlayCtnt .formContainer .formFooter {
+    height: 0px !important;
 }
