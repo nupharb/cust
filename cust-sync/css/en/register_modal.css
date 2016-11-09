@@ -2127,6 +2127,11 @@ p.pymnt_iconWithText.visibleText span {
     right: 12px;
 }
 
+#formFooter_remove .rightClmn {
+    position: static !important;
+    padding: 4px;
+}
+
 .regOverlay.deposit #overlayContainer .formContainer .formFooter a {
     float: right;
 }
@@ -6872,4 +6877,8 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 
 .rmMthdConditionssecondOverlayCtnt .formContainer .formFooter {
     height: 0px !important;
+}
+
+.editMthdsecondOverlayDiv {
+    width: 559px !important;
 }
