@@ -342,7 +342,7 @@
 }
 
 .regOverlay #overlayContainer .formContainer form label.label.top {
-    margin-top: 0;
+    margin-top: 17px;
 }
 
 .regOverlay #overlayContainer .formContainer form label span.optionalField {
@@ -389,7 +389,7 @@
 }
 
 .regOverlay #overlayContainer .formContainer form .tinyInput input {
-    height: 30px;
+    height: 27px;
 }
 
 .regOverlay #overlayContainer .formContainer form .firstName input,
@@ -466,7 +466,7 @@ input#recaptcha_response_field {
 .regOverlay #secondOverlayDiv #inputContent_edit .largeInput,
 .regOverlay #overlayContainer .formContainer form .midInput {
     width: 182px;
-    height: 30px;
+    height: 36px;
     padding: 0;
 }
 
@@ -502,6 +502,7 @@ input#recaptcha_response_field {
     background-color: #fff0f0;
 }
 
+.regOverlay .submitGreen,
 .regOverlay #overlayContainer .formContainer form .submitGreen {
     position: relative;
     float: left;
@@ -510,6 +511,7 @@ input#recaptcha_response_field {
     width: 177px;
 }
 
+.regOverlay #overlayContainer .formContainer form .submitGreen:hover,
 .regOverlay .submitGreen:hover {
     background-color: #338c00;
     color: #fff;
@@ -1137,7 +1139,7 @@ span.importo-prelevare-text {
 #paymentMethodsMenu #scrollContent {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 509px;
+    height: 550px;
     border-top: 1px solid #959595;
 }
 
@@ -2102,6 +2104,10 @@ p.pymnt_iconWithText.visibleText span {
 .regOverlay.deposit #overlayContainer .formContainer .formFooter,
 #paymentMethodsContent .pmTitle, .regOverlay.deposit #inputs {
     width: 527px;
+}
+
+#paymentMethodsContent .pmTitle {
+    width: 100%;
 }
 
 .regOverlay.deposit .month {
@@ -3536,17 +3542,21 @@ i
 }
 
 #secondOverlayTop.rmMthdConditionssecondOverlayTop {
-    width: 791px !important;
-    padding-left: 10px;
+    width: 781px !important;
 }
 
 #secondOverlayTop.rmMthdConditionssecondOverlayTop #secondOverlay_close {
-    display: block;
+    display: inline-block;
     float: right;
     cursor: pointer;
-    padding-right: 14px;
-    height: 20px;
-    width: auto !important;
+    padding-right: 2px;
+    background-image: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+    background-size: 12px;
+    background-position: 50% 50%;
+    margin-top: 5px;
+    width: 14px;
+    height: 16px;
+    text-indent: 5000px;
 }
 
 #inputContent_conditions > p {
@@ -3581,11 +3591,11 @@ i
 }
 
 .overlayStatusOk {
-    color: #346200;
+    color: #3da700;
 }
 
 .overlayStatusBad {
-    color: #ab0119;
+    color: #c20000;
 }
 
 .overlayStatusNeutral {
@@ -3760,7 +3770,12 @@ a.overlay_cancelBtn, a.ftr_cancelBtn {
     font-size: 16px;
 }
 
-a.overlay_cancelBtn:before,
+a.overlay_cancelBtn:hover,
+a.ftr_cancelBtn:hover {
+   color: #269eec !important;
+}
+
+/*a.overlay_cancelBtn:before,
 a.ftr_cancelBtn:before {
     content: " ";
     background: url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
@@ -3768,17 +3783,9 @@ a.ftr_cancelBtn:before {
     height: 10px;
     display: inline-block;
 }
-
-a.overlay_cancelBtn,
+*/
 a.overlay_cancelBtn {
-    color: #1a74ae !important;
-    font-size: 16px;
-    font-weight: bold;
     margin-left: 5px;
-    padding-left: 16px;
-    float: left;
-    text-decoration: none !important;
-    line-height: 44px;
 }
 
 #formFooter_remove .overlay_cancelBtn {
@@ -6747,8 +6754,7 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 }
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayTop {
-    width: 100% !important;
-    padding-left: 10px;
+    width: 539px !important;
 }
 
 .regOverlay #secondOverlayTop #editOverlayTitle {
@@ -6777,9 +6783,16 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     background: #fff;
 }
 
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayCtnt.editMthdsecondOverlayCtnt #inputContent_multi_remove form#form_remove_multi {
+    width: 527px;
+}
+
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtmLeft,
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtm,
-.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtmRight {
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtmRight,
+.regOverlay #secondOverlayDiv.rmMthdConditionssecondOverlayDiv #secondOverlayBtmLeft,
+.regOverlay #secondOverlayDiv.rmMthdConditionssecondOverlayDiv #secondOverlayBtm,
+.regOverlay #secondOverlayDiv.rmMthdConditionssecondOverlayDiv #secondOverlayBtmRight {
     height: 0;
 }
 
@@ -6810,10 +6823,17 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter a.overlay_cancelBtn {
     background: none;
     top: 13px;
+    font-weight: 400;
 }
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter .rightClmn {
     margin: 0;
+    text-align: left;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter #formFooter_remove strong {
+    display: inline-block;
+    max-width: 275px;
 }
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter a.overlay_removeBtn {
@@ -6831,7 +6851,7 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 
 .regOverlay #content_modalAcctPromoSB_promo {
     width: 185px !important;
-    height: 539px !important;
+    height: 550px !important;
     overflow: hidden;
     margin-top: 36px;
 }
@@ -6847,7 +6867,9 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 }
 
 .regOverlay .rhs_helpLinks {
-    margin-top: 162px;
+    margin-top: 192px;
+    width: auto;
+    padding: 0 !important;
 }
 
 .rmMthdConditionssecondOverlayDiv {
